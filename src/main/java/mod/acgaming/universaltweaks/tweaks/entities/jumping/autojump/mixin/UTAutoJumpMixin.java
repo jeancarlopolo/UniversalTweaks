@@ -22,7 +22,7 @@ public class UTAutoJumpMixin
     @Inject(method = "isAutoJumpEnabled", at = @At("RETURN"), cancellable = true)
     public void utAutoJump(CallbackInfoReturnable<Boolean> cir)
     {
-        if (!UTConfigTweaks.ENTITIES.utAutoJumpToggle || !Minecraft.getMinecraft().isSingleplayer()) return;
+        if (!UTConfigTweaks.ENTITIES.utAutoJumpToggle return;
         EntityPlayerSP player = Minecraft.getMinecraft().player;
         // Magic numbers to identify as this tweak's step heights.
         final float assistedStepHeight = Float.intBitsToFloat(0b00111111101000000000001000000000); // About 1.25
